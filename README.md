@@ -2,7 +2,7 @@
 
 Ce projet a pour objectif de développer un système intelligent permettant l'analyse et le diagnostic des électrocardiogrammes (ECG). Une application mobile réalisée en Flutter intègre deux modèles de deep learning complémentaires :
 
-- **Modèle de prédiction** : Estime les mesures cliniques d’un ECG (amplitude et durée des pics R, T, intervalles PR, QT, etc.) à partir d’une image ECG et de données patient.
+- **Modèle de Régression** : Estime les mesures cliniques d’un ECG (amplitude et durée des pics R, T, intervalles PR, QT, etc.) à partir d’une image ECG et de données patient.
 - **Modèle de classification multi-label** : Classifie les ECG en 5 catégories de maladies cardiaques.
 
 ## 📱 Description du Projet
@@ -10,7 +10,7 @@ Ce projet a pour objectif de développer un système intelligent permettant l'an
 Ce projet a pour objectif d’exploiter le deep learning pour l’analyse des ECG via une application mobile. Nous avons :
 
 - 💡 Développé une application **Flutter** intégrant deux modèles de deep learning.
-- 📈 Conçu un **modèle de prédiction** pour estimer les mesures cliniques d’un ECG.
+- 📈 Conçu un **modèle de Régression** pour estimer les mesures cliniques d’un ECG.
 - 🏥 Conçu un **modèle de classification multi-label** pour détecter 5 pathologies cardiaques.
 - 🧼 Mis en place un **pipeline de prétraitement** pour les images ECG et les données tabulaires.
 - ✅ Obtenu des **performances élevées** avec une précision de `0.91` pour la classification et des métriques prometteuses pour la prédiction.
@@ -33,7 +33,7 @@ pip install numpy==1.23.2
 ```
 # 📊 Performance des Modèles
 
-## 1. 🔢 Modèle de Prédiction
+## 1. 🔢 Modèle de Régression
 
 ### Comparaison des Métriques selon le Type d'Image ECG
 
@@ -71,7 +71,7 @@ pip install numpy==1.23.2
 
 | Modèle                        | Exemple 1                            | Exemple 2                            |
 |------------------------------|--------------------------------------|--------------------------------------|
-| **📏 Modèle de Prédiction (Mesures)**     | ![Mesure1](pred-1.png)    | ![Mesure2](pred-2.png)    |
+| **📏 Modèle de Régression (Mesures)**     | ![Mesure1](pred-1.png)    | ![Mesure2](pred-2.png)    |
 | **🩺 Modèle de Classification (Multi-label)**  | ![Classif1](exemple-classif-1.png)  | ![Classif2](exemple-classif-4.png)  |
 
 ## ⚙️ Utilisation de l'API Flask pour les Prédictions
